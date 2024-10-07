@@ -43,3 +43,5 @@ for prefix in system vendor system_ext product oem odm vendor_dlkm odm_dlkm; do
     replace_value_resetprop ro.product.${prefix}.name "aosp_" ""
     replace_value_resetprop ro.product.${prefix}.name "lineage_" ""
 done
+
+delete_prop_with_name_resetprop "lineage"
